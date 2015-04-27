@@ -1,0 +1,70 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+}
+
+body
+{
+    height: 100%;
+   /* background: url(../task.png) no-repeat center top;*/
+    margin: 12px auto;
+}
+
+div
+{
+    width: 928px;
+    height: 31px;
+    margin: 18px auto;
+    font: 18px arial;
+    padding: 11px 0px 0px 0px;
+}
+
+a
+{
+    text-decoration: none;
+    color: rgb(107, 107, 107);
+}
+
+.home
+{
+    margin-left: 70px;
+    float: left;
+}
+
+.products
+{
+    margin-left: 80px;
+    float: left;
+}
+
+.news
+{
+    margin-left: 80px;
+    float: left;
+}
+
+.about_us
+{
+    margin-left: 85px;
+    float: left;
+}
+
+.contact_us
+{
+    margin-left: 80px;
+    float: left;
+}
+
+.top_menu
+{
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+.clear
+{
+    clear: both;
+}

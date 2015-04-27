@@ -1,0 +1,72 @@
+body
+{
+    background: url(../images/task.png) no-repeat left top;
+    margin: 21px 0 0 29px;
+    border-left: 1px solid #E5E5E5;
+    color: #4A4A4A;
+}
+
+h1
+{
+    font: 23px Arial;
+    margin: -1px 0 0 51px;
+}
+
+div
+{
+    height: 30px;
+    width: 186px;
+    font: bold 14px Tahoma;
+    border-bottom: 1px dotted gray;
+    line-height: 30px;
+}
+
+p
+{
+    margin-top: 3px;
+    margin-left: -1.5px;
+    margin-bottom: 0px;
+    letter-spacing: 0.4px;
+    line-height: 22px;
+}
+
+.phone
+{
+    background: url(../images/mphone.jpg) no-repeat 12px 4px;
+    margin-top: 19px;
+    margin-left: 44px;
+    padding-bottom: 5px;
+    padding-left: 52px;
+    letter-spacing: 0.1px
+} 
+
+.fax
+{
+    background: url(../images/fax.jpg) no-repeat 8px 1px;
+    margin-top: 8px;
+    margin-left: 44px;
+    padding-bottom: 4.5px;
+    padding-left: 52px;
+    letter-spacing: 0.1px
+}
+
+.email
+{
+    background: url(../images/email.jpg) no-repeat 8px 5px;
+    margin-top: 9px;
+    margin-left: 43px;
+    padding-bottom: 4px;
+    padding-left: 52px;
+    letter-spacing: 0.58px;
+}
+
+.adress
+{
+    background: url(../images/adress.jpg) no-repeat 5px 1px;
+    margin-top: 7px;
+    margin-left: 44px;
+    padding-left: 52px;
+    letter-spacing: 1.75px;
+    border-bottom: none;
+}
+

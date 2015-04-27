@@ -1,0 +1,102 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+}
+
+body
+{
+    height: 100%;
+  /*  background: url(../back.png) no-repeat center top;*/
+    width: 800px;
+    margin: 12px auto;
+}
+
+h1
+{
+    font: 34px Arial;
+    border-bottom: 2px solid rgb(34, 121, 218);
+    text-align: center;
+}
+
+div
+{
+    width: 220px;
+    height: 223px;
+    border: 1px solid;
+    margin: 35px 0px 0px 35px;
+    float: left;
+    text-align: center;    
+    font: 14px Tahoma; 
+    border-radius: 8px;
+}
+
+img
+{
+    margin: 20px 20px 3px 20px;
+}
+
+span
+{
+    vertical-align: -6px;
+    line-height: 6px;
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
+    vertical-align: -15px;
+}
+
+.button
+{
+    border: none;
+    color: black;
+    background: url("../images/button.png") no-repeat;
+    width: 298px;
+    height: 53px;
+    text-align: center;
+    font: bold 16px Tahoma;
+    margin: 20px 0 0 251px;
+}
+
+.button:hover 
+{
+    background: url("../images/button-over.png") no-repeat;
+}
+
+.cat1
+{
+    background: url(../images/texture1.jpg) no-repeat left top;
+}
+
+.cat2
+{
+    background: url(../images/texture3.jpg) left top;
+}
+
+.cat3
+{
+    background: url(../images/texture2.jpg) left top;
+}
+
+.year_cat
+{
+    width: 50px;
+    height: 50px;
+    color: white;
+    background: rosybrown;
+    border-radius: 14px;
+    border: 1px solid rgb(248, 223, 108);;
+    position: absolute;
+    top: 29px;
+    left: 732px;
+}
+
+.clear
+{
+    clear: both;
+}

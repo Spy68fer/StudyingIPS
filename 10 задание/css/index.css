@@ -1,0 +1,56 @@
+.main
+{
+    margin: 30px auto;
+    width: 500px;
+    height: 500px;
+    background: rgb(0, 153, 204);
+    position: relative;
+    text-align: center;
+}
+
+.red_block
+{
+    width: 70px;
+    height: 70px;
+    background: red;
+}
+
+.green_block
+{
+    width: 100px;
+    height: 100px;
+    background: rgb(0, 204, 0);;
+}
+
+.left_top
+{
+    float: left;
+}
+
+.right_top
+{
+    float: right;
+}
+    
+.left_down
+{
+    float: left;
+    position: absolute;
+    bottom: 0;
+}
+
+.right_down
+{
+    float: right;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.center
+{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -50px 0 0 -50px;
+}
