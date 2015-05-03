@@ -2,71 +2,66 @@ body
 {
     background: url(../images/task.png) no-repeat left top;
     margin: 21px 0 0 29px;
+    width: 282px;
     border-left: 1px solid #E5E5E5;
-    color: #4A4A4A;
 }
-
+    
 h1
 {
     font: 23px Arial;
     margin: -1px 0 0 51px;
+    color: rgb(86, 86, 86); 
 }
 
-div
+ul 
 {
-    height: 30px;
-    width: 186px;
-    font: bold 14px Tahoma;
-    border-bottom: 1px dotted gray;
+    list-style: none;
     line-height: 30px;
+    margin: 0 0 0 3px;
+}
+
+li
+{
+    font: bold 14px Tahoma;
+    color: #757575;
+    line-height: 35px;
+    border-bottom: 1px dotted rgb(153, 153, 153);
 }
 
 p
 {
-    margin-top: 3px;
-    margin-left: -1.5px;
-    margin-bottom: 0px;
+    line-height: 21px;
+    margin: 2px 0 0 0;
     letter-spacing: 0.4px;
-    line-height: 22px;
 }
 
 .phone
 {
-    background: url(../images/mphone.jpg) no-repeat 12px 4px;
-    margin-top: 19px;
-    margin-left: 44px;
-    padding-bottom: 5px;
-    padding-left: 52px;
-    letter-spacing: 0.1px
+    background: url(../images/mphone.jpg) no-repeat 13px 6px;
+    margin: 16px 0 0 0;
+    padding: 0px 0 3px 53px;
 } 
 
 .fax
 {
-    background: url(../images/fax.jpg) no-repeat 8px 1px;
-    margin-top: 8px;
-    margin-left: 44px;
-    padding-bottom: 4.5px;
-    padding-left: 52px;
-    letter-spacing: 0.1px
+    background: url(../images/fax.jpg) no-repeat 9px 4px;
+    margin: 5px 0 0 0;
+    padding: 0px 0 3px 53px;
 }
 
 .email
 {
-    background: url(../images/email.jpg) no-repeat 8px 5px;
-    margin-top: 9px;
-    margin-left: 43px;
-    padding-bottom: 4px;
-    padding-left: 52px;
-    letter-spacing: 0.58px;
+    background: url(../images/email.jpg) no-repeat 8px 8px;
+    margin: 5px 0 0 0;
+    padding: 0px 0 3px 52px;
+    letter-spacing: 0.6px;
 }
 
 .adress
 {
-    background: url(../images/adress.jpg) no-repeat 5px 1px;
-    margin-top: 7px;
-    margin-left: 44px;
-    padding-left: 52px;
-    letter-spacing: 1.75px;
+    background: url(../images/adress.jpg) no-repeat 6px 3px;
+    margin: 4px 0 0 0;
+    padding: 0px 0 3px 53px;
+    letter-spacing: 1.77px;
     border-bottom: none;
 }
-
