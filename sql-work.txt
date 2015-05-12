@@ -37,16 +37,16 @@ VALUES
 INSERT INTO customer
   (first_name, last_name, passport_code, registration_date)
 VALUES
-  ('John', 'Lock', 2201446987, 2015-04-09),
-  ('Sarah', 'Revere', 2206487487, 2015-04-10),
-  ('David', 'Beckham', 2209565448, 2015-04-12);
+  ('John', 'Lock', 2201446987, '2015-04-09'),
+  ('Sarah', 'Revere', 2206487487, '2015-04-10'),
+  ('David', 'Beckham', 2209565448, '2015-04-12');
 
 INSERT INTO offer
   (dvd_id, customer_id, offer_date, return_date) 
 VALUES
-  (1, 2, 2015-05-02, 2015-05-09),
-  (3, 1, 2015-05-02, 2015-05-09),
-  (1, 2, 2015-05-09);
+  (1, 2, '2015-05-02', '2015-05-09'),
+  (3, 1, '2015-05-02', '2015-05-09'),
+  (1, 2, '2015-05-09');
 
 4)
 SELECT * FROM dvd 
