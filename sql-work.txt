@@ -1,0 +1,57 @@
+1) CREATE DATABASE rental;
+
+2) USE rental;
+
+CREATE TABLE dvd(
+  dvd_id INT(10) UNSIGNED AUTO_INCREMENT,
+  title VARCHAR(255),
+  production_year YEAR),
+  PRIMARY KEY(dvd_id));
+
+CREATE TABLE customer(
+  customer_id INT(10) UNSIGNED AUTO_INCREMENT,
+  first_name VARCHAR(255),
+  last_name VARCHAR(255),
+  passport_code INT(11);
+  registration_date DATE,
+  PRIMARY KEY(customer_id));
+
+CREATE TABLE offer(
+  offer_id INT(10) UNSIGNED AUTO_INCREMENT,
+  dvd_id INT(10),
+  customer_id INT(10),
+  offer_date DATE,
+  return_date DATE,
+  PRIMARY KEY(offer_id));
+
+3)
+INSERT INTO dvd
+  (title, production_year)
+VALUES
+  ('The Matrix', 2001),
+  ('The Matrix 2', 2003);
+  ('The Matrix 3', 2005);
+  ('The Simpsons in the cinema', 2010)
+
+
+INSERT INTO customer
+  (first_name, last_name, passport_code, registration_date)
+VALUES
+  ('John', 'Lock', 2201446987, 2015-04-09),
+  ('Sarah', 'Revere', 2206487487, 2015-04-10),
+  ('David', 'Beckham', 2209565448, 2015-04-12);
+
+INSERT INTO offer
+  (dvd_id, customer_id, offer_date, return_date) 
+VALUES
+  (1, 2, 2015-05-02, 2015-05-09),
+  (3, 1, 2015-05-02, 2015-05-09),
+  (1, 2, 2015-05-09);
+
+4)
+SELECT * FROM dvd 
+WHERE production_year=2010 ORDER BY title;
+
+5)
+SELECT * FROM offer
+WHERE return_date=NULL;
