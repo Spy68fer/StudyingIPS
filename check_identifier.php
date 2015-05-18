@@ -32,4 +32,4 @@
         IDEN_NO_CORRECT_ERROR => "There is not correct identifier (it has specials symbols.)"
     );
 
-    echo ($errorCode == ERR_OK) ? $messages[$errorCode] . ' Identifier: '.$id : $messages[$errorCode]; 
+    echo ($errorCode == ERR_OK) ? $messages[$errorCode] . ' Identifier: ' . $id : $messages[$errorCode]; 
