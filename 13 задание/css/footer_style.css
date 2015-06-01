@@ -1,0 +1,71 @@
+.footer_cont
+{
+    float: left;
+    width: 100%;
+}
+
+.bottom_logo
+{
+    width: 124px;
+    height: 60px;
+    margin: -5px auto;
+}
+
+.bottom_menu
+{
+    width: 450px;
+    height: 10px;
+    margin: 4px auto;
+}
+
+.bottom_menu .bottom_menu_each
+{
+    float:left;
+    font: 10px/9px Arial;
+    color: #535353;
+    border-left: 2px solid #818181;
+}
+
+.bottom_home
+{
+    border: none !important;
+    padding: 0px 9px 0 15px;
+}
+
+.bottom_about
+{
+    padding: 0px 5px 0 8px;
+}
+
+.bottom_work
+{
+    padding: 0px 9px 0 6px;
+}
+
+.bottom_services
+{
+    padding: 0px 8px 0 5px;
+}
+
+.bottom_resorces
+{
+    padding: 0px 6px 0 5px;
+}
+
+.bottom_articles
+{
+    padding: 0px 8px 0 8px;
+}
+
+.bottom_contact
+{
+    padding: 0px 9px 0 6px;
+}
+
+.copyright
+{
+    width: 172px;
+    margin: 0 auto;
+    font: 14px Arial;
+    color: #545454;
+}

@@ -1,0 +1,83 @@
+header
+{
+    float: left;
+    height: 150px;
+    width: 100%;
+    font: 20px Arial;
+    padding: 35px 0px 0px 0px;
+}
+
+.top_menu a
+{
+    text-decoration: none;
+    color: rgb(107, 107, 107);
+}
+.logo
+{
+    float: left;
+    width: 253px;
+    height: 75px;
+    margin: 0 0 0 28px;
+}
+
+.citate
+{
+    margin: 7px 0 0 0px;
+    height: 52px;
+    padding: 6px 0 0 28px;
+    width: 500px;
+    font-size: 20px;
+    float: left;
+    color: rgb(241, 166, 0);
+    border-left: 1px solid rgb(202, 200, 197);
+}
+
+.under_citate
+{
+    font: 14px Tahoma;
+    color: #929292;
+    padding-top: 4px;
+    letter-spacing: -0.81px;
+}
+
+.top_menu
+{
+    border-top: 1px solid rgb(171, 171, 171);
+    border-bottom: 1px solid rgb(171, 171, 171);
+    font: 18px/42px Arial;
+    width: 928px;
+    float: left;
+    margin: 22px 0 0 41px;
+    line-height: 42px;
+}
+
+.home
+{
+    margin-left: 70px;
+}
+
+.products
+{
+    margin-left: 75px;
+}
+
+.news
+{
+    margin-left: 75px;
+}
+
+.about
+{
+    margin-left: 80px;
+}
+
+.contact_us
+{
+    margin-left: 75px;
+}
+
+
+.clear
+{
+    clear: both;
+}

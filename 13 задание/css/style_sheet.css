@@ -1,0 +1,35 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+}
+
+body
+{
+    height: 100%;
+    /*background: url(../Minimal-Website-Design1.png) no-repeat center top;*/
+    background: url("../images/back.png") no-repeat center top;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+.main_block
+{
+    width: 1004px;
+    height: 1190px;
+    background-color: #FFFFFF;
+    border-top: 8px solid rgb(242, 172, 4);
+    margin: 51px auto;
+    box-shadow: 0 1px 2px #999; 
+}
+
+.clear
+{
+    clear: both;
+}
+
