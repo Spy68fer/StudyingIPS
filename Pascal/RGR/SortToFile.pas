@@ -1,7 +1,7 @@
 UNIT SortToFile;
 INTERFACE
   CONST
-    Max = 60;
+    Max = 50;
   TYPE 
     NodePtr = ^Node;
     Node = RECORD
@@ -10,14 +10,13 @@ INTERFACE
            END; 
     ArraySort = ARRAY [1 .. Max] OF STRING;
 PROCEDURE InitArrayForSort(VAR Arr: ArraySort);   
-PROCEDURE SortArrayToFile(VAR Arr: ArraySort);    
+PROCEDURE SortArrayToFile(VAR SortFile: TEXT; VAR Arr: ArraySort);    
 IMPLEMENTATION
 VAR
   FirstPtr, NewPtr, Curr, Prev: NodePtr;
   Found: BOOLEAN;
   ArrayForSort: ArraySort;
   Index: INTEGER;
-  SortFile: TEXT;
   
 PROCEDURE InitArrayForSort(VAR Arr: ArraySort);
 BEGIN
@@ -26,9 +25,9 @@ BEGIN
     Arr[Index] := '-';  
 END;
 
-PROCEDURE SortArrayToFile(VAR Arr: ArraySort);
+PROCEDURE SortArrayToFile(VAR SortFile: TEXT; VAR Arr: ArraySort);
 BEGIN {SortArrayToFile}   
-
+  REWRITE(SortFile);
   FirstPtr := NIL;
   FOR Index := 1 TO Max
   DO
@@ -72,6 +71,5 @@ BEGIN {SortArrayToFile}
 END; {SortArrayToFile}
 
 BEGIN
-  ASSIGN(SortFile, 'SortFile.txt');
-  REWRITE(SortFile)
+
 END.
