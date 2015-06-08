@@ -1,0 +1,11 @@
+CREATE DATABASE survey_XDS;
+
+USE survey_XDS;
+
+CREATE TABLE survey(
+  survey_id INT(10) UNSIGNED AUTO_INCREMENT,
+  first_name VARCHAR(255),
+  last_name VARCHAR(255),
+  email VARCHAR(255),
+  age INT(3),
+  PRIMARY KEY(survey_id));
