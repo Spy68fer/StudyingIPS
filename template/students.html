@@ -2,6 +2,6 @@
 <ul>
   {foreach from = $students
             item = student}
-  <li>{$student.name}, {$student.age}</li>
+  <li>{$student.name|escape:html}, {$student.age}</li>
   {/foreach}
 </ul>
