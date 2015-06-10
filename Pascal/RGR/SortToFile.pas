@@ -57,7 +57,7 @@ BEGIN {SortArrayToFile}
           THEN
             FirstPtr := NewPtr
           ELSE
-            Prev^.Next := NewPtr;
+            Prev^.Next := NewPtr
         END
     END;  
   {2.2. Печать значений начиная с FirstPtr^.Key}
@@ -66,8 +66,11 @@ BEGIN {SortArrayToFile}
   DO
     BEGIN
       WRITELN(SortFile, NewPtr^.Key);
-      NewPtr := NewPtr^.Next
-    END
+      Prev := NewPtr;
+      NewPtr := NewPtr^.Next;
+      DISPOSE(Prev)
+    END;
+  DISPOSE(NewPtr)
 END; {SortArrayToFile}
 
 BEGIN
