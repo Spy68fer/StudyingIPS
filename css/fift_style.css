@@ -1,0 +1,23 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    padding-left: 10px;
+}
+
+#field
+{
+    width: 450px;
+    height: 450px;
+    background-color: aqua;
+    margin: 15px 15px 15px 0;
+}
+
+#newGame
+{
+    width: 80px;
+}

@@ -1,0 +1,38 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    margin: 20px;
+}
+
+ul
+{
+    margin-top: 20px;
+}
+
+li
+{
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+li.error input
+{
+    border: 1px solid red;
+}
+
+p.notification
+{
+    display: none;
+    color: red;
+    margin: 0;
+}
+
+li.error p.notification
+{
+    display: inherit;
+}

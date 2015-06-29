@@ -1,0 +1,46 @@
+.footer
+{
+    background: linear-gradient(to bottom, #eee 0%, #fff 100%);
+    border-top: 2px solid #ccc;
+    padding: 0 15px 10px 15px;
+}
+
+.footer_block
+{
+    float: left;
+    margin: 15px 0;
+    width: 190px;
+}
+
+.footer_block h4
+{
+    font: bold 13.2480001449585px Arial;
+}
+
+.footer_block ul
+{
+    list-style: none;
+}
+
+.footer_block li
+{
+    margin: 3px 0 4px 15px;
+}
+
+.footer_block ul li a 
+{
+    color: #666;
+    font: 13.2480001449585px Arial;
+}
+
+.footer_text
+{
+    font: 13.2480001449585px Arial;
+    margin: 13px 0;
+    color: #666;
+}
+
+.footer_text a
+{
+    color: #666;
+}

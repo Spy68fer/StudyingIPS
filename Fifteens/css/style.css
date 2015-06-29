@@ -1,0 +1,249 @@
+body
+{
+    width:400px; 
+    height:480px; 
+    background-color:#939393;;
+}
+
+.game_field
+{
+    position: absolute;
+    left: 40%;
+    top: 40%;
+    margin-top: -128px;
+    margin-left: -128px;
+    width: 442px;
+    height: 442px;
+    border-radius: 4px;
+}
+
+.back 
+{
+    position: absolute;
+    left: 40%;
+    top: 40%;
+    margin-top: -133px;
+    margin-left: -133px;
+    width: 442px;
+    height: 442px;
+    border-radius: 16px;
+    background-color: #FFFFFF;
+    opacity: 0.8;
+}
+
+.block
+{
+    float: left;
+    width: 140px;
+    height: 140px;
+    margin: 2px 2px 2px 2px;
+    background-color: #F3EDD6;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#block_1
+{
+    background: url(../images/img1.png)
+}
+
+#block_2
+{
+    background: url(../images/img2.png)
+}
+
+#block_3
+{
+    background: url(../images/img3.png)
+}
+
+#block_4
+{
+    background: url(../images/img4.png)
+}
+
+#block_5
+{
+    background: url(../images/img5.png)
+}
+
+#block_6
+{
+    background: url(../images/img6.png)
+}
+
+#block_7
+{
+    background: url(../images/img7.png)
+}
+
+#block_8
+{
+    background: url(../images/img8.png)
+}
+
+#block_9
+{
+    background: url(../images/img9.png)
+}
+
+table
+{
+    text-align: center;
+}
+
+.false
+{
+    background-color: #F7A603;
+}
+
+.true
+{
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, #39F046),
+        color-stop(1, #76ED7E),
+        color-stop(1, #9AFFA4)
+    );
+    background-image: -o-linear-gradient(bottom, #39F046 0%, #76ED7E 100%, #9AFFA4 100%);
+    background-image: -moz-linear-gradient(bottom, #39F046 0%, #76ED7E 100%, #9AFFA4 100%);
+    background-image: -webkit-linear-gradient(bottom, #39F046 0%, #76ED7E 100%, #9AFFA4 100%);
+    background-image: -ms-linear-gradient(bottom, #39F046 0%, #76ED7E 100%, #9AFFA4 100%);
+    background-image: linear-gradient(to bottom, #39F046 0%, #76ED7E 100%, #9AFFA4 100%);
+}
+
+.start_button_field
+{
+    top: 40%;
+    margin-top: -132px;
+    background-color: #E4DDE4;
+    opacity: .9;
+    position: absolute;
+    left: 40%;
+    margin-left: -132px;
+    width: 441px;
+    height: 441px;
+    border-radius: 16px;
+}
+
+.button 
+{
+    box-shadow:inset 0px 0px 9px 0px #c1ed9c;
+    background-color:#9dce2c;
+    border-radius: 8px;
+    border-bottom-left-radius:8px;
+    text-indent:0px;
+    display:inline-block;
+    color:#ffffff;
+    font: bold 20px Arial;
+    height:35px;
+    line-height:35px;
+    width:96px;
+    text-decoration:none;
+    text-align:center;
+    text-shadow:1px 1px 0px #689324;
+}
+
+.button:hover
+ {
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #8cb82b), color-stop(1, #9dce2c) );
+    background:-moz-linear-gradient( center top, #8cb82b 5%, #9dce2c 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#8cb82b', endColorstr='#9dce2c');
+    background-color:#8cb82b;
+    cursor: pointer;
+}
+
+.start
+{
+    position: relative;
+    left: 50%;
+    margin-left: -48px;
+    top:40%;
+    margin-top: 9px;
+}
+
+.stat_field
+{
+    position: relative;
+    background: black;
+    border: 5px solid white;
+    border-radius: 31px;
+    width: 156px;
+    height: 107px;
+    left: 218%;
+    top: 40%;
+    display: none;
+}
+
+.resett
+{
+    margin: 13px 4px 0px 0px;
+    border: 3px solid black;
+    width: 150px;
+}
+
+.actions
+{
+    height: 23px;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+    width: 120px;
+    font: bold 21px Arial;
+    color: white;
+    padding-left: 39px;
+}
+
+.count
+{
+    color: white;
+    font: bold 21px Arial;
+    margin-left: 72px;
+}
+
+.win
+{
+    display: none;
+    color: #FF4949;
+    font: bold 50px Arial;
+    height: 60px;
+    line-height: 42px;
+    width: 100px;
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+    left: 48%;
+    top: 40%;
+    margin-left: -48px;
+    margin-top: -25px;
+}
+
+.driver_button_field
+{
+    display: none;
+    position: absolute;
+    border-radius: 4px;
+    width: 105px;
+    height: 110px;
+    border-radius: 8px;
+    left: 60%;
+    top: 50%;
+    margin-top: -133px;
+}
+
+.driver_button_background
+{
+    display: none;
+    position: absolute;
+    border-radius: 4px;
+    background-color: #20C0D9;
+    opacity: 0.7;
+    width: 115px;
+    height: 130px;
+    border-radius: 8px;
+    left: 60%;
+    top: 50%;
+    margin-top: -133px;
+}

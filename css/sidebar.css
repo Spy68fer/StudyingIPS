@@ -1,0 +1,67 @@
+.sidebar
+{
+    background-color: #4B4A45;
+    float: left;
+    width: 210px;
+}
+
+.sidebar .search 
+{
+    margin-top: 11px;
+    padding: 0 6px;
+}
+
+.sidebar form 
+{
+    background-color: #FFFFFF;
+}
+
+.sidebar .search_input
+{
+    width: 163px;
+    border: none;
+    padding: 3px;
+}
+
+.sidebar .search_button
+{
+    vertical-align: -3px;
+    padding-right: 2px;
+    opacity: 0.5;
+}
+
+.sidemenu
+{
+    min-height: 300px;
+    max-height: 387px;
+}
+
+.sidemenu h2
+{
+    margin: 16px -6px 0 0;
+    background-color: #DAD7C5;
+    font: bold 15px/31px Arial;
+    height: 30px;
+    padding-left: 5px;
+}
+
+.sidemenu ul
+{
+    list-style: none;
+    padding-left: 10px;
+    margin-top: 12px;
+}
+
+.sidemenu ul li
+{
+    margin-top: 1px;
+    background: url(../images/bullet.png) no-repeat 5px 7px;
+}
+
+.sidemenu ul li a
+{
+    color: #EEDFAC;
+    font: 14px Arial;
+    text-decoration: none;
+    margin-left: 20px;
+}

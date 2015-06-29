@@ -1,0 +1,14 @@
+.circle 
+{
+    margin: 30px 20px;
+    width: 100px;
+    height: 100px;
+    background: red;    
+    border: 2px solid red;
+    border-radius: 5em;
+    position: absolute;
+}
+p
+{
+    float: left;
+}
