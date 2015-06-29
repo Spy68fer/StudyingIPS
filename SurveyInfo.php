@@ -2,12 +2,12 @@
     require_once ('include/common.inc.php');
     
     header('Content-Type: text/plain');
-    $filename = GetParam('email');
+    $filename = getParam('email');
     $error = ERR_OK;
-    $surveyInfo = GetSurveyFromFile($filename, $error);
+    $surveyInfo = getSurveyFromFile($filename, $error);
     if ($error == ERR_OK)
     {
-        PrintSurvey($surveyInfo);
+        printSurvey($surveyInfo);
     }
     else
     {

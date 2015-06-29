@@ -5,24 +5,35 @@
     define('ERR_NO_ACCESS_TO_FILE', 'no_access');
     define('ERR_UNABLE_TO_PARSE', 'unable_to_parse');
 
-    function GetSurveyFilePath($fileName)
+    function getSurveyFilePath($fileName)
     {
         return 'data/' . $fileName . '.txt';
     }
 
-    function GetSurveyFromRequest()
+    function getSurveyFromRequest()
     {
         $survey = array
         (
-            'first_name' => GetParam('first_name'),
-            'last_name' => GetParam('last_name'),
-            'email' => GetParam('email'),
-            'age' => GetParam('age')
+            'first_name' => getParam('first_name'),
+            'last_name' => getParam('last_name'),
+            'email' => getParam('email'),
+            'age' => getParam('age')
         );
         return $survey;
     }
     
-    function SaveSurveyToFile($survey)
+     function getEmailFromRequest()
+    {
+        $mail = getParam('email');
+        return $mail;
+    }
+    
+    function validateSurvey($info)
+    {
+        return !empty($info['email']);
+    }
+    
+    function saveSurveyToFile($survey)
     {
         $fileName = $survey['email'];
         if (!empty($fileName))
@@ -36,7 +47,33 @@
         }
     }
     
-    function GetSurveyFromFile($fileName, &$errorCode)
+    function saveSurveyToDb($surveyInfo)
+    {
+        $firstName = dbQuote($surveyInfo['first_name']);
+        $lastName = dbQuote($surveyInfo['last_name']);
+        $email = dbQuote($surveyInfo['email']);
+        $age = dbQuote($surveyInfo['age']);
+    
+        $sql = "INSERT INTO survey SET " .
+            " first_name = '{$firstName}', " . 
+            " last_name = '{$lastName}', " .
+            " email = '{$email}', " .
+            " age = '{$age}'";
+
+        dbQuery($sql);
+    }
+    
+    
+    
+    function getSurveyFromDb($fileName)
+    {
+        $email = dbQuote($surveyInfo['email']);
+        $sql = "SELECT * FROM survey WHERE " .
+            " email = '{$email}', " .
+        dbQuery($sql); 
+    }
+    
+    function getSurveyFromFile($fileName, &$errorCode)
     {
         $errorCode = ERR_OK;
         $filePath = GetSurveyFilePath($fileName);
@@ -68,7 +105,7 @@
         return ($errorCode === ERR_OK) ? $survey : false;
     }
     
-    function PrintSurvey($survey)
+    function printSurvey($survey)
     {
         foreach($survey as $key => $value)
         {

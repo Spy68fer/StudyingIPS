@@ -1,17 +1,18 @@
 <?php
     $g_dbLink = null; // использовать только внутри этого модуля!!!
 
-    function dbConnect()
+    function dbConnect($db_name)
     {
         global $g_dbLink;
-        $g_dbLink = mysqli_connect(DB_HOST,
-                                    DB_USER,
-                                    DB_PASS,
-                                    DB_NAME);
+        $g_dbLink = @mysqli_connect(
+                            DB_HOST,
+                            DB_USER,
+                            DB_PASS, 
+                            $db_name, 
+                            DB_PORT);
         if (mysqli_connect_errno())
         {
-            echo "Unable to connect to DB";
-            exit();
+            die('Unable to connect to database.');
         }
     }
             
@@ -25,9 +26,11 @@
     {
         global $g_dbLink;
         $data = array();
-        if ($result = mysqli_query($g_dbLink, $query))
+
+        $result = mysqli_query($g_dbLink, $query);
+        if ($result && $result !== true)
         {
-            while ($row = mysqli_fetch_assoc($result))
+            while($row = mysqli_fetch_assoc($result))
             {
                 array_push($data, $row);
             }
@@ -35,6 +38,8 @@
         }
         return $data;
     }
+    
+    
     
     function dbClose()
     {

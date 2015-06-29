@@ -1,6 +1,6 @@
 <?php
-    function GetParam($parameter)
-    {
-        $param = (isset($_GET[$parameter])) ? $_GET[$parameter] : '';
-        return $param;
-    }
+
+function getParam($name, $defaultValue = '')
+{
+    return isset($_POST[$name]) ? $_POST[$name] : $defaultValue;
+}

@@ -1,6 +1,6 @@
 <?php
   
-  function GetView($template, $vars)
+  function getView($template, $vars)
   {
     $template = TEMPLATE_DIR . $template;
     $content = '';
@@ -12,11 +12,21 @@
     
     return $smarty->fetch($template);
   }
+
+    function buildLayout($templateName, $vars = array())
+    {
+        $content = getView($templateName, $vars);
+        $vars = array
+        (
+            "content" => $content      
+        );    
+        echo getView("layout.html", $vars);
+    }    
   
-  function BuildPage($template, $vars)
-  {
-    $header = GetView("header.html", $vars);
-    $content = GetView($template, $vars);
-    $footer = GetView("footer.html", $vars);
-    return $header . $content . $footer;
-  }
+    function buildPage($template, $vars = array())
+    {
+        $header = getView('header.tpl', $vars);
+        $content = getView($template, $vars);
+        $footer = getView('footer.tpl', $vars);
+        return $header . $content . $footer;
+    }
